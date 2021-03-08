@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+<body>
+    
+
+    
+
+    <script>
+        //For Looping
+    //Simple example of for loop statement that shows numbers from 1 - 5
+
+    // for (var i=1; i<=5; i++){
+    //     document.write(`<p> This is number ${i}</p>`);
+    // }
+
+    //Second example
+    //For loop without initialization
+    // var j=5;
+    // for (; j<=10; j++){
+    //     document.write(`<p> This is number ${j}</p>`);
+    // }
+
+    // Example Three
+    // For loop without condition
+
+    // for (let k=1; ; k+=2){
+    //     document.write(`<p> This is number ${i}</p>`);
+    //     if (k>10) {
+    //         break;
+    //     }
+    // }
+
+    //Example Four
+    //For without any expression
+    //Initialize g variable
+
+    // var g=1;
+    // for (;;){
+    //     //Terminate the loop if g is greater than 10
+    //     if(g>10){
+    //         break;
+    //     }
+    //     document.write(`<p> This is number ${g}</p>`);
+    //     g++;
+    // }
+
+    //Example Five
+    //For loop without the loop body
+
+    // let sum= 0;
+    // for(let i=0; i<= 9; i++, sum +=i );
+    // document.write(`<p> This is sum number ${sum}</p>`);
+
+    // Loop with an  array
+    // var numbers= [65, 99, 34, 12, 10, 77]; //Array of numbers
+    // for (var i=0; i< numbers.length ; i++){
+    //     document.write(`<p> This is array with index number ${i} ${numbers[i]}</p>`);
+    // }
+
+    //Lab Task One
+    //Display each value in the array with the index number
+    var arrOfNumbers = [10,55, 40, 70, 89, 56, 30, 20, 10, 50, 40]
+    for (var i=0; i< arrOfNumbers.length ; i++){
+        document.write(`<p> The array entry with index number ${i} is ${arrOfNumbers[i]}</p>`);
+    }document.write(`<hr>`);
+
+    //Lab Task two
+    //Using example One to four, display the values of your array with it index number
+
+    var myArrays = ['Tolulope', 'Grace', 'James', 'Ayokunle', 'Juwon', 'Ebenezer', 'Rachel', 'Eleganza', 'Lola', 'Susan', 'Wonderful', 'Oluwaseun', 'Oluwatoyin'];
+
+    //Method one
+    for (var i=0; i<myArrays.length; i++){
+        document.write(`<p> The array entry with index number ${i} is ${myArrays[i]}</p>`);
+    }
+    document.write(`First above<hr>`);
+
+    //Method two
+    var init=0;
+    for (; init< myArrays.length; init++){
+        document.write(`<p> The array entry with index number ${init} is ${myArrays[init]}</p>`);
+    }document.write(`Second above<hr>`);
+
+    //Method three
+    for (let k=0; ; k++){
+        //document.write(`<p> The array entry with index number ${k} is ${myArrays[k]}</p>`);
+        if (k >=myArrays.length) {
+            break;
+        }
+        document.write(`<p> The array entry with index number ${k} is ${myArrays[k]}</p>`);
+        
+    }document.write(`Third above<hr>`);
+
+    //Method four
+    var g=0;
+    for (;;){
+        //Terminate the loop if g is greater than 10
+        if(g  >= myArrays.length){
+            break;
+        }
+        document.write(`<p> The array entry with index number ${g} is ${myArrays[g]}</p>`);
+        g++;
+    }document.write(`Fourth above<hr>`);
+
+    </script>
+
+
+</body>
+</html>
